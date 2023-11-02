@@ -56,7 +56,11 @@
 </head>
 <body>
     <h2 class="tittle">Welcome to</h2>
-    <img src="./img/Instudo_logo-removebg-preview.png" alt="" srcset="" class="logoInstudo">
+    <div class="logo">
+    
+        <img src="./img/Instudo_logo-removebg-preview.png" alt="" srcset="" class="logoInstudo">
+    </div>
+        
     
     <form action="#">
         <div class="campos">
@@ -66,35 +70,29 @@
             <div class="titulo">Senha:</div>
             <label for=""><input type="password" name="" id="iptSenha" maxlength="8"></label>
 
-            <p><a href="">Esqueceu a senha?</a></p>
+            <p><a href="" class="esqueceuSenha">Esqueceu a senha?</a></p>
+            <label for="" class="botaoEntrar"><input type="button" value="Entrar" id="btnEntrar"></label>
         </div>
 
-        <label for="" class="botaoEntrar"><input type="button" value="Entrar" id="btnEntrar"></label>
 
-        <div class="outros">
-            <p class="topText">Entrar com:</p>
+        <p class="topText">Entrar com:</p>
+        <ul class="outros">
+            <li class="opcao">
+                <img src="./img/logo_google-removebg-preview.png" alt="" srcset="" class="img">
+                <span>Google</span>
+            </li>
             
-            <div class="opcao">
-                <label for="">
-                    <img src="./img/logo_google-removebg-preview.png" alt="" srcset="" class="imgGoogle">
-                    <p class="nomeOpcao">Google</p>
-                </label>
-            </div>
+            <li class="opcao">
+                <img src="./img/logo_facebook-removebg-preview.png" alt="" srcset="" class="img">
+                <span>Facebook</span>
 
-            <div class="opcao">
-                <label for="">
-                    <img src="./img/logo_facebook-removebg-preview.png" alt="" srcset="" class="imgFacebook">
-                    <p class="nomeOpcao">Facebook</p>
-                </label>
-            </div>
+            </li>
 
-            <div class="opcao">
-                <label for="">
-                    <img src="./img/logo_apple-removebg-preview.png" alt="" srcset="" class="imgApple">
-                    <p class="nomeOpcao">Apple</p>
-                </label>
-            </div>
-        </div>
+            <li class="opcao">
+                <img src="./img/logo_apple-removebg-preview.png" alt="" srcset="" class="img">
+                <span>Apple</span>
+            </li>
+        </ul>
 
 
     </form>

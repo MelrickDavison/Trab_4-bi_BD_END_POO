@@ -1,16 +1,119 @@
 * {
-    padding: 0;
-    margin: 0;
+    border: none;
 }
 
 body {
     background-color: #1A191B;
-    /* color: white; */
-};
+    color: white;
+}
 
-body h2 .tittle{
-    font-size: 80px;
+.tittle {
+    font-size: 50px;
     font-family: 'La Belle Aurore', cursive;
     color: #FFF06A;
-    box-shadow: 8px 8px 0 8px #fff06a7d;
+    text-shadow: #fff06ab6 1px 0px 20px;
+    margin-left: 5vh;
+}
+
+.logoInstudo {
+    width: 300px;
+    height: auto;
+    margin-top: -150px;
+}
+
+
+form {
+    display: flex;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: auto;
+    padding: 10px;
+    /* align-items: center; */
+}
+
+.campos .titulo {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.campos #iptLogin, #iptSenha {
+    font-size: 20px;
+    padding: 6px;
+    width: auto;
+    margin-bottom: 8px;
+    font-family: 'Raleway', sans-serif;
+    background: #8733c7d5;
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+}
+
+.campos #iptLogin:focus, #iptSenha:focus {
+    
+}
+
+.esqueceuSenha {
+    font-size: 17px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.botaoEntrar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#btnEntrar {
+    font-size: 17px;
+    background-color: #9C56D3;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 0 0 15px 0 #9d56d3ce;
+    text-align: center;
+    padding: 10px;
+}
+
+.outros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    justify-content: center;
+}
+
+.topText {
+    text-align: center;
+    font-size: 20px;
+    color: #9747FF;
+    font-family: 'raleway', sans-serif;
+}
+
+.img {
+    width: 70px;
+    border: 2px solid yellowgreen;
+}
+
+.opcao {
+    border: 2px solid aquamarine;
+    max-width: 40%;
+    display: flex;
+    min-width: 10%;
+    align-items: center;
+}
+
+span {
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
