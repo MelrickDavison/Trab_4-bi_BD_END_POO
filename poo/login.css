@@ -60,10 +60,6 @@ form {
     padding-left: 15px;
 }
 
-.campos #iptLogin:focus, #iptSenha:focus {
-    
-}
-
 .esqueceuSenha {
     font-size: 17px;
     font-family: 'Kumbh Sans', sans-serif;
