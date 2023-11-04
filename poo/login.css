@@ -12,19 +12,20 @@ body {
     font-family: 'La Belle Aurore', cursive;
     color: #FFF06A;
     text-shadow: #fff06ab6 1px 0px 20px;
-    margin-left: 5vh;
+    margin-left: 8vh;
 }
 
 .logoInstudo {
     width: 300px;
     height: auto;
     margin-top: -150px;
+    margin-left: 3vh;
 }
 
 
 form {
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100%;
     width: 100%;
     /* justify-content: center; */
@@ -37,7 +38,7 @@ form {
 .campos {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: auto;
     padding: 10px;
     /* align-items: center; */
@@ -58,7 +59,13 @@ form {
     border-radius: 20px;
     color: white;
     padding-left: 15px;
+    transition: 600ms ease-in;
 }
+
+/* .campos #iptLogin:focus, #iptSenha:focus {
+    border: 3px solid #ffeb37;
+    transition: 600ms ease-in;
+} */
 
 .esqueceuSenha {
     font-size: 17px;
@@ -79,14 +86,21 @@ form {
     box-shadow: 0 0 15px 0 #9d56d3ce;
     text-align: center;
     padding: 10px;
+    transition: 300ms ease-in-out;
+}
+
+#btnEntrar:hover{
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
 }
 
 .outros {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     justify-content: center;
+    align-items: center;
 }
 
 .topText {
@@ -98,15 +112,29 @@ form {
 
 .img {
     width: 70px;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
 }
 
 .opcao {
-    border: 2px solid aquamarine;
-    max-width: 40%;
     display: flex;
-    min-width: 10%;
+    flex-direction: row;
+    /* border: 2px solid aquamarine; */
+    display: flex;
+    width: 280px;
+    height: 57px;
     align-items: center;
+    background: #8733c7d5;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px 0 #0d0d0e;
+    transition: 200ms;
+}
+
+.opcao:hover {
+    transform: scale(1.03);
+    margin-bottom: 12px;
+    transition: 200ms;
+    background: #ac54efd5;
 }
 
 span {
