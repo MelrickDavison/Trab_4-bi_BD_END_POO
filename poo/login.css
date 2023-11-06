@@ -7,8 +7,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    overflow-y: scroll;
 }
-
 .tittle {
     font-size: 40px;
     font-family: 'La Belle Aurore', cursive;
@@ -67,15 +67,19 @@ form {
     font-family: 'Raleway', sans-serif;
     background: #8733c7d5;
     border-radius: 20px;
+    border: 3px solid transparent;
     color: white;
     padding-left: 15px;
-    transition: 600ms ease-in;
+    outline: none;
+    transition: 600ms;
 }
 
-/* .campos #iptLogin:focus, #iptSenha:focus {
-    border: 3px solid #ffeb37;
-    transition: 600ms ease-in;
-} */
+.campos #iptLogin:focus, #iptSenha:focus {
+    border: 3px solid rgb(173, 125, 255);
+    transition: 600ms;
+    outline: none;
+    box-shadow: 0 0 10px 3px #8733c7b6;
+}
 
 .esqueceuSenha {
     font-size: 17px;

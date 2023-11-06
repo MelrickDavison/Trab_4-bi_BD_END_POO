@@ -1,0 +1,18 @@
+* {
+    border: none;
+}
+
+body {
+    background: linear-gradient(to bottom, #1A191A 52.75%, #470C5B);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.logoInstudo {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px; 
+
+}
