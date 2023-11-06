@@ -5,25 +5,33 @@
 body {
     background: linear-gradient(to bottom, #1A191A 52.75%, #470C5B);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     color: white;
 }
 
 .tittle {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'La Belle Aurore', cursive;
     color: #FFF06A;
     text-shadow: #fff06ab6 1px 0px 20px;
-    margin-left: 8vh;
+    margin-bottom: 65px;
 }
 
 .logoInstudo {
-    width: 300px;
+    width: 200px;
     height: auto;
-    margin-top: -150px;
-    margin-left: 3vh;
+    object-fit: cover;
+    margin-top: -150px; 
+    padding-bottom: 10px;
 }
-
+.cabecalho {
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid #9C56D3;
+    width: 300px;
+    margin-bottom: 10%;
+}
 
 form {
     display: flex;
@@ -72,6 +80,7 @@ form {
 .esqueceuSenha {
     font-size: 17px;
     font-family: 'Kumbh Sans', sans-serif;
+    color:  #a242ebd5;
 }
 
 .botaoEntrar {
@@ -80,12 +89,12 @@ form {
 }
 
 #btnEntrar {
-    font-size: 17px;
-    background-color: #9C56D3;
+    font-size: 22px;
+    background-color: #9a07c7;
     color: white;
-    border-radius: 10px;
-    width: 100px;
-    box-shadow: 0 0 15px 0 #9d56d3ce;
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 0 15px 0 #9a07c7b6;
     text-align: center;
     padding: 10px;
     transition: 300ms ease-in-out;
