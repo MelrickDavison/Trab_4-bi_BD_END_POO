@@ -3,7 +3,9 @@
 }
 
 body {
-    background-color: #1A191B;
+    background: linear-gradient(to bottom, #1A191A 52.75%, #470C5B);
+    background-repeat: no-repeat;
+    background-size: contain;
     color: white;
 }
 
