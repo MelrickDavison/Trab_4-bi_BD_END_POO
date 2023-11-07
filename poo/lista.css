@@ -18,5 +18,21 @@ body {
 }
 
 .container-cards{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: dashed 1px #0000ff;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px;
+    border: dashed 1px #ff0000;
+}
+
+.card > .conteudo{
+    width: 100%;
 }
