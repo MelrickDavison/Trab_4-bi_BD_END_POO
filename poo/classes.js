@@ -37,12 +37,20 @@ class Turma {
 }
 
 class Materia {
-    constructor(id, nome) {
+    constructor(id, nome,imagem ) {
         this.id = id,
             this.nome = nome,
+            this.imagem = imagem,
             this.assuntos = []
+            
+    }
+    adicionarAssuntos(assunto){
+        if(assunto instanceof Assunto){
+        this.assuntos.push(assunto)
+        }
     }
 }
+
 
 class Comentario {
     constructor(id, criador, conteudo) {
