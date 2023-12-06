@@ -1,18 +1,20 @@
 let professor1 = new Professor('dhs.lima', 'David', 'david1314', '1990-09-13', '', 'Mestrado', '', '19000')
 let turma1 = new Turma(1, "Biologia", professor1)
-console.log(turma1);
-let materia1 = new Materia("Bio2", "Biologia", "dna.png")
-let materia2 = new Materia("Hist2", "Historia", "history.png")
-let materia3 = new Materia("Mat2", "Matematica", "abacus.png")
-let materia4 = new Materia("Eng2", "English", 'USA.png')
-let materia5 = new Materia("Por2", "Portugues", "abc.png")
-let assunto1 = new Assunto("bio22", "Reino Fungi", "Biologia", "Iremos aprender o basico sobre sobre o reino fungi.");
-let assunto2 = new Assunto("bio22", "Reino Plantae", "Biologia", "Iremos aprender o basico sobre sobre o reino das plantas.");
-
-materia1.adicionarAssuntos(assunto1)
-materia1.adicionarAssuntos(assunto2)
-console.log(materia1)
-
+let materia1 = new Materia("Bio2", "Biologia", "dna.png"," Aprenda tudo sobre o ser humano e o universo onde ele vive ")
+let materia2 = new Materia("Hist2", "Historia", "history.png"," Estude o passado para não errar no futuro")
+let materia3 = new Materia("Mat2", "Matematica", "abacus.png","Tudo sobre números e suas tecnologias")
+let materia4 = new Materia("Eng2", "English", 'USA.png',"Vire fluente na língua mais falada do mundo")
+let materia5 = new Materia("Por2", "Portugues", "abc.png","Portugues e suas tecnologias")
 let listaDeMaterias = []
-
 listaDeMaterias.push(materia1, materia2, materia3, materia4, materia5)
+let atividade1 = new Atividade("Bio2", materia1 , professor1, "2")
+let atividade2 = new Atividade("Hist", materia2 , professor1, "2")
+let atividade3 = new Atividade("Mat2", materia3 , professor1, "2")
+let atividade4 = new Atividade("Eng", materia4 , professor1, "2")
+let atividade5 = new Atividade("Por2", materia5 , professor1, "2")
+
+    materia1.adicionarAtividade(atividade1)
+    materia2.adicionarAtividade(atividade2)
+    materia3.adicionarAtividade(atividade3)
+    materia4.adicionarAtividade(atividade4)
+    materia5.adicionarAtividade(atividade5)

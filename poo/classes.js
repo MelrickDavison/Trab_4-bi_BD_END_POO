@@ -1,14 +1,14 @@
-class Aluno {
-    constructor(login, nome, senha, nascimento, foto, matricula, pontos) {
-        this.login = login,
-            this.nome = nome,
-            this.senha = senha,
-            this.nascimento = nascimento,
-            this.foto = foto,
-            this.matricula = matricula,
-            this.pontos = pontos
-    }
-}
+// class Aluno {
+//     constructor(login, nome, senha, nascimento, foto, matricula, pontos) {
+//         this.login = login,
+//             this.nome = nome,
+//             this.senha = senha,
+//             this.nascimento = nascimento,
+//             this.foto = foto,
+//             this.matricula = matricula,
+//             this.pontos = pontos
+//     }
+// }
 
 class Professor {
     constructor(login, nome, senha, nascimento, foto, especializacao, curriculo, siape) {
@@ -37,16 +37,18 @@ class Turma {
 }
 
 class Materia {
-    constructor(id, nome,imagem ) {
+    constructor(id, nome, imagem, descricao, linkDesc) {
         this.id = id,
             this.nome = nome,
             this.imagem = imagem,
-            this.assuntos = []
-            
+            this.descricao = descricao,
+            this.linkDesc = linkDesc,
+            this.atividades = []
+
     }
-    adicionarAssuntos(assunto){
-        if(assunto instanceof Assunto){
-        this.assuntos.push(assunto)
+    adicionarAtividade(atividade) {
+        if (atividade instanceof Atividade) {
+            this.atividades.push(atividade)
         }
     }
 }
@@ -93,20 +95,34 @@ class Apostila extends Conteudo {
     }
 }
 
-class Assunto {
-    constructor(id, nome, materia, descricao) {
-        this.id = id,
-            this.nome = nome,
-            this.materia = materia,
-            this.descricao = descricao,
-            this.atividades = []
-        this.conteudos = []
+class Atividade {
+    constructor(idMateria, titulo, professor, pontos) {
+        this.id = idMateria,
+            this.titulo = titulo,
+            this.professor = professor,
+            this.pontos = pontos
     }
-    adicionarMaterias(conteudo) {
-        this.conteudos.push(conteudo)
+    adicionarComentario(comentario) {
+        this.comentarios.push(comentario)
     }
 
-    adicionarAtividades(atividade) {
-        this.atividades.push(atividade)
-    }
 }
+
+// class Assunto {
+//     constructor(id, nome, materia, descricao) {
+//         this.id = id,
+//             this.nome = nome,
+//             this.materia = materia,
+//             this.descricao = descricao,
+//             this.atividades = []
+//         this.conteudos = []
+//     }
+//     adicionarMaterias(conteudo) {
+//         this.conteudos.push(conteudo)
+//     }
+
+//     adicionarAtividades(atividade) {
+//         this.atividades.push(atividade)
+//     }
+// }
+
