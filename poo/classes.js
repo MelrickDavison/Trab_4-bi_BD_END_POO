@@ -37,12 +37,11 @@ class Turma {
 }
 
 class Materia {
-    constructor(id, nome, imagem, descricao, linkDesc) {
-        this.id = id,
+    constructor(id, nome, imagem, descricao) {
+            this.id = id,
             this.nome = nome,
             this.imagem = imagem,
             this.descricao = descricao,
-            this.linkDesc = linkDesc,
             this.atividades = []
 
     }
