@@ -6,11 +6,11 @@ let materia3 = new Materia("Mat2", "Matematica", "abacus.png", "Tudo sobre núme
 let materia4 = new Materia("Eng2", "English", 'USA.png', "Vire fluente na língua mais falada do mundo")
 let materia5 = new Materia("Por2", "Portugues", "abc.png", "Portugues e suas tecnologias")
 
-let atividade1 = new Atividade("Bio2", materia1, professor1, "2")
-let atividade2 = new Atividade("Hist", materia2, professor1, "2")
-let atividade3 = new Atividade("Mat2", materia3, professor1, "2")
-let atividade4 = new Atividade("Eng", materia4, professor1, "2")
-let atividade5 = new Atividade("Por2", materia5, professor1, "2")
+let atividade1 = new Atividade("Bio2", "Reino Fungi", materia1, professor1, "2")
+let atividade2 = new Atividade("Hist", "Colonização", materia2, professor1, "2")
+let atividade3 = new Atividade("Mat2", "Análise Combinatória", materia3, professor1, "2")
+let atividade4 = new Atividade("Eng", "Modal Verbs", materia4, professor1, "2")
+let atividade5 = new Atividade("Por2", "Conjugação Verbal", materia5, professor1, "2")
 
 materia1.adicionarAtividade(atividade1)
 materia2.adicionarAtividade(atividade2)

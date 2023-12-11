@@ -38,7 +38,7 @@ class Turma {
 
 class Materia {
     constructor(id, nome, imagem, descricao) {
-            this.id = id,
+        this.id = id,
             this.nome = nome,
             this.imagem = imagem,
             this.descricao = descricao,
@@ -95,10 +95,11 @@ class Apostila extends Conteudo {
 }
 
 class Atividade {
-    constructor(idMateria, titulo, professor, pontos) {
+    constructor(idMateria, titulo, materia, professor, pontos) {
         this.id = idMateria,
             this.titulo = titulo,
-            this.professor = professor,
+            this.materia = this.materia
+        this.professor = professor,
             this.pontos = pontos
     }
     adicionarComentario(comentario) {
