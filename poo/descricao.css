@@ -1,0 +1,39 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A191A;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 200px;
+    margin-left: 20px;
+}
+
+.conteudo h2 {
+    font-size: 30px;
+    color: rgb(169, 169, 169);
+    border-bottom: 2px solid rgb(169, 169, 169);
+    padding-bottom: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 20px;
+}
+
+.descricao {
+    color: rgb(113, 113, 113);
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.atividades {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: blueviolet;
+}
