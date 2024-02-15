@@ -8,6 +8,7 @@ body {
     background-size: cover;
     color: white;
     overflow-y: scroll;
+
 }
 .tittle {
     font-size: 40px;
@@ -16,6 +17,7 @@ body {
     text-shadow: #fff06ab6 1px 0px 20px;
     margin-bottom: 65px;
 }
+
 
 .logoInstudo {
     width: 200px;
@@ -104,6 +106,10 @@ form {
     transition: 300ms ease-in-out;
 }
 
+#btnLogin{
+    text-decoration: none;
+}
+
 #btnEntrar:hover{
     transform: scale(1.1);
     transition: 300ms ease-in-out;
@@ -143,6 +149,7 @@ form {
     margin-bottom: 10px;
     box-shadow: 5px 5px 10px 0 #0d0d0e;
     transition: 200ms;
+    text-decoration: none; 
 }
 
 .opcao:hover {
